@@ -16,7 +16,9 @@
 		{"id":"9b38c8bd994a4e6d","type":"text","text":"[PCA analysis of input and output](https://colab.research.google.com/drive/1Ctrzc7bftdFprCXG40js0OrcKtKcpJS7?authuser=1#scrollTo=kB7cfi-2Js7C)","x":-67,"y":-479,"width":201,"height":60},
 		{"id":"e71c7536d1b520c5","type":"text","text":"[Data proprocessing](https://colab.research.google.com/drive/10XE7naFHdwteCcyRqU3uCT0W74LqfMzf?authuser=1#scrollTo=qzDEiMq3HiyD)","x":-174,"y":-580,"width":222,"height":71},
 		{"id":"0d601be5d63245c2","type":"text","text":"[GLL calculation](https://colab.research.google.com/drive/1C9t3GwEAC-N5o0uuDAvOqbBvxCd5lfJr?authuser=1)","x":268,"y":-512,"width":162,"height":66},
-		{"id":"4c1852d1ce649657","x":480,"y":-396,"width":202,"height":50,"type":"text","text":"submission script"}
+		{"id":"4c1852d1ce649657","type":"text","text":"submission script","x":480,"y":-396,"width":202,"height":50},
+		{"id":"0c6f091015e8147a","x":-375,"y":-745,"width":250,"height":60,"type":"text","text":"Cut data to transition time to see if there is difference"},
+		{"id":"6318286b6c141917","x":-161,"y":-821,"width":250,"height":60,"type":"text","text":"Predict at each wavelength "}
 	],
 	"edges":[
 		{"id":"58a3b29720b1ce4d","fromNode":"f6c509506929d184","fromSide":"bottom","toNode":"ede659df0f18afd8","toSide":"top"},
@@ -36,6 +38,8 @@
 		{"id":"e6669ee1ff8a8f55","fromNode":"dec8f15d074c0bda","fromSide":"top","toNode":"a61e670f1ad76de8","toSide":"left"},
 		{"id":"e67205eadfefdc57","fromNode":"7be35227ad5e8219","fromSide":"top","toNode":"9b38c8bd994a4e6d","toSide":"left","color":"4"},
 		{"id":"2fc10ea6ad21f22c","fromNode":"ed4668dae8abe228","fromSide":"top","toNode":"e71c7536d1b520c5","toSide":"bottom","color":"4"},
-		{"id":"ae2932b89a2adc13","fromNode":"7f117587059c8907","fromSide":"top","toNode":"4c1852d1ce649657","toSide":"bottom"}
+		{"id":"ae2932b89a2adc13","fromNode":"7f117587059c8907","fromSide":"top","toNode":"4c1852d1ce649657","toSide":"bottom"},
+		{"id":"7975f47eecf3498b","fromNode":"ed4668dae8abe228","fromSide":"top","toNode":"0c6f091015e8147a","toSide":"bottom"},
+		{"id":"bcaa608163457a1e","fromNode":"ed4668dae8abe228","fromSide":"top","toNode":"6318286b6c141917","toSide":"bottom"}
 	]
 }
