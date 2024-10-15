@@ -11,14 +11,10 @@
             "id": "eee5770d13048149",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "diff-view",
               "state": {
-                "file": "Ariel Challenge.canvas",
-                "viewState": {
-                  "x": 369.20363013698653,
-                  "y": -578.1554349315065,
-                  "zoom": -0.6636409551250619
-                }
+                "file": ".obsidian/workspace.json",
+                "staged": true
               }
             }
           }
@@ -88,7 +84,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ariel Challenge.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +100,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ariel Challenge.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,17 +121,23 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Ariel Challenge.canvas"
-              }
+              "state": {}
+            }
+          },
+          {
+            "id": "d7e668382c4544df",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
