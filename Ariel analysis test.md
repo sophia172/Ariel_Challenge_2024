@@ -32,5 +32,12 @@
 				x = self.fc3(x) # No activation on the final output layer
 				return x
 		```
-	- Result
+	- Result Analysis
+		- Input
+			![[Pasted image 20241018002607.png]]
+		- output gt
+			![[Pasted image 20241018002648.png]]
+		- output prediction
+			![[Pasted image 20241018002719.png]]
+			
 	- 
