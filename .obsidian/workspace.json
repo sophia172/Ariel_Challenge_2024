@@ -19,10 +19,30 @@
                   "y": -490.6698571428565,
                   "zoom": -1.1913355871189943
                 }
-              }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Ariel Challenge"
+            }
+          },
+          {
+            "id": "ce029a889d4cfe6b",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Ariel Challenge.canvas",
+                "viewState": {
+                  "x": -212.3435880176903,
+                  "y": -497.9376683763681,
+                  "zoom": -1.1140135126460897
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Ariel Challenge"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -42,7 +62,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -57,7 +79,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -65,7 +89,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -96,7 +122,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Ariel Challenge"
             }
           },
           {
@@ -108,7 +136,9 @@
                 "file": "Ariel Challenge.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Ariel Challenge"
             }
           },
           {
@@ -119,7 +149,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -129,7 +161,9 @@
               "type": "outline",
               "state": {
                 "file": "Ariel Challenge.canvas"
-              }
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Ariel Challenge"
             }
           },
           {
@@ -137,7 +171,9 @@
             "type": "leaf",
             "state": {
               "type": "git-view",
-              "state": {}
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
@@ -158,7 +194,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "42989b6518a4d14b",
+  "active": "ce029a889d4cfe6b",
   "lastOpenFiles": [
     "Ariel Challenge.canvas",
     "Welcome.md"

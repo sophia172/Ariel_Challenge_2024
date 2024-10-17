@@ -19,7 +19,8 @@
 		{"id":"4c1852d1ce649657","type":"text","text":"submission script","x":480,"y":-396,"width":202,"height":50},
 		{"id":"0c6f091015e8147a","type":"text","text":"Cut data to transition time to see if there is difference","x":-375,"y":-745,"width":250,"height":60},
 		{"id":"6318286b6c141917","type":"text","text":"Predict at each wavelength ","x":-161,"y":-821,"width":250,"height":60},
-		{"id":"a27a25bd47daeec7","x":396,"y":-555,"width":250,"height":60,"type":"text","text":"Check with standard output"}
+		{"id":"a27a25bd47daeec7","type":"text","text":"Check with standard output","x":396,"y":-555,"width":250,"height":60},
+		{"id":"09bbd91e1954c137","x":-589,"y":-761,"width":109,"height":50,"type":"text","text":"FFT"}
 	],
 	"edges":[
 		{"id":"58a3b29720b1ce4d","fromNode":"f6c509506929d184","fromSide":"bottom","toNode":"ede659df0f18afd8","toSide":"top"},
@@ -42,6 +43,7 @@
 		{"id":"ae2932b89a2adc13","fromNode":"7f117587059c8907","fromSide":"top","toNode":"4c1852d1ce649657","toSide":"bottom"},
 		{"id":"7975f47eecf3498b","fromNode":"ed4668dae8abe228","fromSide":"top","toNode":"0c6f091015e8147a","toSide":"bottom"},
 		{"id":"bcaa608163457a1e","fromNode":"ed4668dae8abe228","fromSide":"top","toNode":"6318286b6c141917","toSide":"bottom"},
-		{"id":"f36861968eb3caf4","fromNode":"4c1852d1ce649657","fromSide":"top","toNode":"a27a25bd47daeec7","toSide":"bottom"}
+		{"id":"f36861968eb3caf4","fromNode":"4c1852d1ce649657","fromSide":"top","toNode":"a27a25bd47daeec7","toSide":"bottom"},
+		{"id":"10284c69d533e305","fromNode":"ed4668dae8abe228","fromSide":"top","toNode":"09bbd91e1954c137","toSide":"bottom"}
 	]
 }
