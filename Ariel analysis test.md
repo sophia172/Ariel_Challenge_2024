@@ -40,4 +40,6 @@
 		- output prediction
 			![[Pasted image 20241018002719.png]]
 			
-	- 
+- ### Fine-tune
+	- normalise data
+	- add activation
