@@ -46,7 +46,7 @@
 			![[Pasted image 20241018131756.png]]
 		- loss  train 2.7e-4, val 6.2 e-4
 - ## ViT
-	- Loss train 4.5e-4, 3.2e-4
+	- Loss train 1.9e-4, 3.1e-4
 	- Prediction
 		![[Pasted image 20241018151223.png]]
 - ## LSTM
