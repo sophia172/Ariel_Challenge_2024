@@ -38,7 +38,7 @@
 		- output gt
 			![[Pasted image 20241018002648.png]]
 		- output prediction
-			![[Pasted image 20241018002719.png]]			
+						
 - ### Fine-tune V24
 	- normalise data and add activation
 		- prediction
