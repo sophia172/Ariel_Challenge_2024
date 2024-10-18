@@ -41,5 +41,7 @@
 			![[Pasted image 20241018002719.png]]
 			
 - ### Fine-tune
-	- normalise data
-	- add activation
+	- normalise data and add activation
+		- prediction
+			![[Pasted image 20241018005557.png]]
+	
