@@ -38,10 +38,14 @@
 		- output gt
 			![[Pasted image 20241018002648.png]]
 		- output prediction
-			![[Pasted image 20241018002719.png]]
-			
-- ### Fine-tune
+			![[Pasted image 20241018002719.png]]			
+- ### Fine-tune V23
 	- normalise data and add activation
 		- prediction
 			![[Pasted image 20241018005557.png]]
-	
+		- loss train 
+# 2. Data exploration
+- ## Use transition time only V24
+	- 40 - 140
+		compared with fine tuned MLP V23
+		- loss
