@@ -44,10 +44,13 @@
 	- normalise data and add activation
 		- prediction
 			![[Pasted image 20241018131756.png]]
-		- loss train train 2.7e-4, val 6.2 e-4
+		- loss  train 2.7e-4, val 6.2 e-4
 - ## ViT
+	- Loss train 4.5e-4, 3.2e-4
 	- Prediction
 		![[Pasted image 20241018151223.png]]
+- ## LSTM
+	- 
 # 2. Data exploration
 - ## Use transition time only V24
 	- 40 - 140
