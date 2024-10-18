@@ -39,11 +39,11 @@
 			![[Pasted image 20241018002648.png]]
 		- output prediction
 			![[Pasted image 20241018002719.png]]			
-- ### Fine-tune V23
+- ### Fine-tune V24
 	- normalise data and add activation
 		- prediction
 			![[Pasted image 20241018005557.png]]
-		- loss train 
+		- loss train train 0.000159 valid 0.0001434 
 # 2. Data exploration
 - ## Use transition time only V24
 	- 40 - 140
