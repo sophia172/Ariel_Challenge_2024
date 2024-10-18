@@ -48,4 +48,4 @@
 - ## Use transition time only V24
 	- 40 - 140
 		compared with fine tuned MLP V23
-		- loss
+		- loss train0.000172 valid 0.000145
