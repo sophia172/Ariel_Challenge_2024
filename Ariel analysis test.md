@@ -58,3 +58,8 @@
 		- loss train 5.8e-4 valid 8.8e-4
 		- plot
 			![[Pasted image 20241018132137.png]]
+- ## AIRS data flux intensity has nothing to do with the target amplitude or where it starts
+	- AIRS data plot
+		- ![[Pasted image 20241021004509.png]]
+	- With Linear correlation plot
+		- ![[Pasted image 20241021004630.png]]
