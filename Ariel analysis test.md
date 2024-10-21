@@ -48,7 +48,7 @@
 - ## ViT
 	- Loss train 3.2e-4, 3.1e-4
 	- Prediction
-		![[Pasted image 20241018151223.png]]
+		![[Pasted image 20241021124635.png]]
 - ## LSTM
 - ## Denoising Autoencoder
 	- ```
