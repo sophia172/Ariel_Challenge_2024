@@ -60,150 +60,150 @@
 		- Saturated output layer >> sigmoid or tanh might cause large/small output, use Relu to avoid this problem
 - ## LSTM
 - ## Denoising Autoencoder
-	- ```
-``` python
-import torch
-import torch.nn as nn
-import torch.optim as optim
-from torch.utils.data import DataLoader
-from torchvision import datasets, transforms
-import matplotlib.pyplot as plt
-import math
-
-
-class PatchEmbedding(nn.Module):
-    def __init__(self, img_size, patch_size, hidden_size):
-        super(PatchEmbedding, self).__init__()
-        self.img_height, self.img_width = img_size  # Non-square height and width
-        self.patch_height, self.patch_width = patch_size
-        self.num_patches = (self.img_height // self.patch_height) * (self.img_width // self.patch_width)
-        self.patch_dim = self.patch_height * self.patch_width  # Grayscale image: 1 channel
-        self.linear_embedding = nn.Linear(self.patch_dim, hidden_size)
-        
-    def forward(self, x):
-        # Break the image into patches
-        patches = x.unfold(2, self.patch_height, self.patch_height).unfold(3, self.patch_width, self.patch_width)
-        patches = patches.contiguous().view(x.size(0), -1, self.patch_height * self.patch_width)  # (batch, num_patches, patch_dim)
-        embeddings = self.linear_embedding(patches)
-        return embeddings
-
-
-class ViTEncoder(nn.Module):
-    def __init__(self, hidden_size, num_layers, num_heads):
-        super(ViTEncoder, self).__init__()
-        self.transformer_encoder = nn.TransformerEncoder(
-            nn.TransformerEncoderLayer(d_model=hidden_size, nhead=num_heads),
-            num_layers=num_layers
-        )
-    
-    def forward(self, x):
-        return self.transformer_encoder(x)
-
-
-class ViTDecoder(nn.Module):
-    def __init__(self, hidden_size, patch_size, img_size):
-        super(ViTDecoder, self).__init__()
-        self.patch_height, self.patch_width = patch_size
-        self.img_height, self.img_width = img_size
-        self.num_patches = (self.img_height // self.patch_height) * (self.img_width // self.patch_width)
-        self.linear_embedding = nn.Linear(hidden_size, self.patch_height * self.patch_width)
-    
-    def forward(self, x):
-        # Decode the patch embeddings back into image patches
-        patches = self.linear_embedding(x)
-        patches = patches.view(x.size(0), self.img_height // self.patch_height, self.img_width // self.patch_width, self.patch_height, self.patch_width)
-        # Reassemble the patches into the original image
-        reassembled_image = patches.permute(0, 1, 3, 2, 4).contiguous().view(x.size(0), 1, self.img_height, self.img_width)
-        return reassembled_image
-
-
-
-class ViTAutoencoder(nn.Module):
-    def __init__(self, img_size, patch_size, hidden_size, num_layers, num_heads):
-        super(ViTAutoencoder, self).__init__()
-        self.img_size = img_size
-        self.patch_size = patch_size
-        self.hidden_size = hidden_size
-        
-        # Patch embedding for non-square grayscale images
-        self.patch_embedding = PatchEmbedding(img_size, patch_size, hidden_size)
-        
-        # Positional encoding
-        self.positional_encoding = nn.Parameter(torch.randn(1, self.patch_embedding.num_patches, hidden_size))
-        
-        # Encoder and decoder
-        self.encoder = ViTEncoder(hidden_size, num_layers, num_heads)
-        self.decoder = ViTDecoder(hidden_size, patch_size, img_size)
-        
-    def forward(self, x):
-        # Embed the image into patches
-        patches = self.patch_embedding(x)
-        
-        # Add positional encoding
-        patches += self.positional_encoding
-        
-        # Encoder
-        encoded = self.encoder(patches)
-        
-        # Decoder
-        decoded = self.decoder(encoded)
-        
-        return decoded
-
-
-
-# Data loading for grayscale images (e.g., MNIST or custom dataset)
-transform = transforms.Compose([
-    transforms.Grayscale(),  # Ensure it's grayscale
-    transforms.ToTensor(),
-    transforms.Normalize((0.5,), (0.5,))
-])
-
-# Use a simple dataset like MNIST for demonstration
-train_dataset = datasets.MNIST(root='./data', train=True, transform=transform, download=True)
-train_loader = DataLoader(train_dataset, batch_size=64, shuffle=True)
-
-# Initialize the model, loss function, and optimizer
-model = ViTAutoencoder(img_size=(28, 32), patch_size=(4, 4), hidden_size=64, num_layers=6, num_heads=8)
-criterion = nn.MSELoss()
-optimizer = optim.Adam(model.parameters(), lr=0.001)
-
-# Training loop
-num_epochs = 10
-for epoch in range(num_epochs):
-    running_loss = 0.0
-    for images, _ in train_loader:
-        optimizer.zero_grad()
-        outputs = model(images)
-        loss = criterion(outputs, images)
-        loss.backward()
-        optimizer.step()
-        running_loss += loss.item()
-    
-    print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {running_loss/len(train_loader):.4f}')
-
-
-# Function to display images
-def imshow(img, title):
-    img = img.squeeze().numpy()
-    plt.imshow(img, cmap='gray')
-    plt.title(title)
-    plt.show()
-
-# Get a batch of test data
-dataiter = iter(train_loader)
-images, _ = dataiter.next()
-
-# Pass the images through the model
-with torch.no_grad():
-    reconstructed_images = model(images)
-
-# Display the original and reconstructed images
-imshow(images[0], title='Original Image')
-imshow(reconstructed_images[0], title='Reconstructed Image')
-
-
-```
+	-  code template ```
+		``` python
+		import torch
+		import torch.nn as nn
+		import torch.optim as optim
+		from torch.utils.data import DataLoader
+		from torchvision import datasets, transforms
+		import matplotlib.pyplot as plt
+		import math
+		
+		
+		class PatchEmbedding(nn.Module):
+		    def __init__(self, img_size, patch_size, hidden_size):
+		        super(PatchEmbedding, self).__init__()
+		        self.img_height, self.img_width = img_size  # Non-square height and width
+		        self.patch_height, self.patch_width = patch_size
+		        self.num_patches = (self.img_height // self.patch_height) * (self.img_width // self.patch_width)
+		        self.patch_dim = self.patch_height * self.patch_width  # Grayscale image: 1 channel
+		        self.linear_embedding = nn.Linear(self.patch_dim, hidden_size)
+		        
+		    def forward(self, x):
+		        # Break the image into patches
+		        patches = x.unfold(2, self.patch_height, self.patch_height).unfold(3, self.patch_width, self.patch_width)
+		        patches = patches.contiguous().view(x.size(0), -1, self.patch_height * self.patch_width)  # (batch, num_patches, patch_dim)
+		        embeddings = self.linear_embedding(patches)
+		        return embeddings
+		
+		
+		class ViTEncoder(nn.Module):
+		    def __init__(self, hidden_size, num_layers, num_heads):
+		        super(ViTEncoder, self).__init__()
+		        self.transformer_encoder = nn.TransformerEncoder(
+		            nn.TransformerEncoderLayer(d_model=hidden_size, nhead=num_heads),
+		            num_layers=num_layers
+		        )
+		    
+		    def forward(self, x):
+		        return self.transformer_encoder(x)
+		
+		
+		class ViTDecoder(nn.Module):
+		    def __init__(self, hidden_size, patch_size, img_size):
+		        super(ViTDecoder, self).__init__()
+		        self.patch_height, self.patch_width = patch_size
+		        self.img_height, self.img_width = img_size
+		        self.num_patches = (self.img_height // self.patch_height) * (self.img_width // self.patch_width)
+		        self.linear_embedding = nn.Linear(hidden_size, self.patch_height * self.patch_width)
+		    
+		    def forward(self, x):
+		        # Decode the patch embeddings back into image patches
+		        patches = self.linear_embedding(x)
+		        patches = patches.view(x.size(0), self.img_height // self.patch_height, self.img_width // self.patch_width, self.patch_height, self.patch_width)
+		        # Reassemble the patches into the original image
+		        reassembled_image = patches.permute(0, 1, 3, 2, 4).contiguous().view(x.size(0), 1, self.img_height, self.img_width)
+		        return reassembled_image
+		
+		
+		
+		class ViTAutoencoder(nn.Module):
+		    def __init__(self, img_size, patch_size, hidden_size, num_layers, num_heads):
+		        super(ViTAutoencoder, self).__init__()
+		        self.img_size = img_size
+		        self.patch_size = patch_size
+		        self.hidden_size = hidden_size
+		        
+		        # Patch embedding for non-square grayscale images
+		        self.patch_embedding = PatchEmbedding(img_size, patch_size, hidden_size)
+		        
+		        # Positional encoding
+		        self.positional_encoding = nn.Parameter(torch.randn(1, self.patch_embedding.num_patches, hidden_size))
+		        
+		        # Encoder and decoder
+		        self.encoder = ViTEncoder(hidden_size, num_layers, num_heads)
+		        self.decoder = ViTDecoder(hidden_size, patch_size, img_size)
+		        
+		    def forward(self, x):
+		        # Embed the image into patches
+		        patches = self.patch_embedding(x)
+		        
+		        # Add positional encoding
+		        patches += self.positional_encoding
+		        
+		        # Encoder
+		        encoded = self.encoder(patches)
+		        
+		        # Decoder
+		        decoded = self.decoder(encoded)
+		        
+		        return decoded
+		
+		
+		
+		# Data loading for grayscale images (e.g., MNIST or custom dataset)
+		transform = transforms.Compose([
+		    transforms.Grayscale(),  # Ensure it's grayscale
+		    transforms.ToTensor(),
+		    transforms.Normalize((0.5,), (0.5,))
+		])
+		
+		# Use a simple dataset like MNIST for demonstration
+		train_dataset = datasets.MNIST(root='./data', train=True, transform=transform, download=True)
+		train_loader = DataLoader(train_dataset, batch_size=64, shuffle=True)
+		
+		# Initialize the model, loss function, and optimizer
+		model = ViTAutoencoder(img_size=(28, 32), patch_size=(4, 4), hidden_size=64, num_layers=6, num_heads=8)
+		criterion = nn.MSELoss()
+		optimizer = optim.Adam(model.parameters(), lr=0.001)
+		
+		# Training loop
+		num_epochs = 10
+		for epoch in range(num_epochs):
+		    running_loss = 0.0
+		    for images, _ in train_loader:
+		        optimizer.zero_grad()
+		        outputs = model(images)
+		        loss = criterion(outputs, images)
+		        loss.backward()
+		        optimizer.step()
+		        running_loss += loss.item()
+		    
+		    print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {running_loss/len(train_loader):.4f}')
+		
+		
+		# Function to display images
+		def imshow(img, title):
+		    img = img.squeeze().numpy()
+		    plt.imshow(img, cmap='gray')
+		    plt.title(title)
+		    plt.show()
+		
+		# Get a batch of test data
+		dataiter = iter(train_loader)
+		images, _ = dataiter.next()
+		
+		# Pass the images through the model
+		with torch.no_grad():
+		    reconstructed_images = model(images)
+		
+		# Display the original and reconstructed images
+		imshow(images[0], title='Original Image')
+		imshow(reconstructed_images[0], title='Reconstructed Image')
+		
+		
+		```
 # 2. Data exploration
 - ## Use transition time only V24
 	- 40 - 140
