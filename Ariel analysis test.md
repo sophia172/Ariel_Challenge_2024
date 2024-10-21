@@ -51,11 +51,11 @@
 		![[Pasted image 20241021124635.png]]
 	- Debug: model callapse
 		- Imbalanced dataset - ignore
-		- Learning rate is too high
-		- Model is too simple
+		- Learning rate is too high >> Do not think this is the problem
+		- Model is too simple 
 		- Wrong Loss function >> MSE and crossEntropy both caused this problem
 		- Model overfitting
-		- Gradient Vanishing/Exploding >> does not solve the problem
+		- Gradient Vanishing/Exploding >> **gradient vanished**
 		- data preprocessing >> make sure data is normalised
 		- Saturated output layer >> sigmoid or tanh might cause large/small output, use Relu to avoid this problem
 - ## LSTM
