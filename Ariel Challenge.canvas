@@ -21,7 +21,10 @@
 		{"id":"6318286b6c141917","type":"text","text":"Predict at each wavelength ","x":-161,"y":-821,"width":250,"height":60},
 		{"id":"a27a25bd47daeec7","type":"text","text":"Check with standard output","x":396,"y":-555,"width":250,"height":60},
 		{"id":"09bbd91e1954c137","type":"text","text":"FFT","x":-589,"y":-761,"width":109,"height":50},
-		{"id":"0392adda9c88d4f5","x":-1129,"y":-660,"width":250,"height":60,"type":"text","text":"Solve spectrum prediction smoothness"}
+		{"id":"0392adda9c88d4f5","type":"text","text":"Solve spectrum prediction smoothness","x":-1129,"y":-660,"width":250,"height":60},
+		{"id":"24fc47a56edf3f38","x":77,"y":-923,"width":250,"height":60,"type":"text","text":"calculate spectrum difference and see how to proceed from that "},
+		{"id":"fddee456751b4758","x":230,"y":-660,"width":97,"height":60,"type":"text","text":"ViT"},
+		{"id":"e69852eb52d773b2","x":287,"y":-787,"width":160,"height":51,"type":"text","text":"separate stars "}
 	],
 	"edges":[
 		{"id":"58a3b29720b1ce4d","fromNode":"f6c509506929d184","fromSide":"bottom","toNode":"ede659df0f18afd8","toSide":"top"},
@@ -46,6 +49,9 @@
 		{"id":"bcaa608163457a1e","fromNode":"ed4668dae8abe228","fromSide":"top","toNode":"6318286b6c141917","toSide":"bottom"},
 		{"id":"f36861968eb3caf4","fromNode":"4c1852d1ce649657","fromSide":"top","toNode":"a27a25bd47daeec7","toSide":"bottom"},
 		{"id":"10284c69d533e305","fromNode":"ed4668dae8abe228","fromSide":"top","toNode":"09bbd91e1954c137","toSide":"bottom"},
-		{"id":"73de44de791a7a90","fromNode":"0f34b766282a06a7","fromSide":"top","toNode":"0392adda9c88d4f5","toSide":"bottom"}
+		{"id":"73de44de791a7a90","fromNode":"0f34b766282a06a7","fromSide":"top","toNode":"0392adda9c88d4f5","toSide":"bottom"},
+		{"id":"542b90592784ed51","fromNode":"ed4668dae8abe228","fromSide":"top","toNode":"24fc47a56edf3f38","toSide":"bottom"},
+		{"id":"586151b8b9d60bcc","fromNode":"30de79ff3be093e9","fromSide":"top","toNode":"fddee456751b4758","toSide":"bottom"},
+		{"id":"425ca1920684b10f","fromNode":"30de79ff3be093e9","fromSide":"top","toNode":"e69852eb52d773b2","toSide":"bottom"}
 	]
 }

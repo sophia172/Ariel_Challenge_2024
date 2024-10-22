@@ -45,14 +45,17 @@
             "id": "c4f38f6bc7ef52c0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Ariel analysis test.md",
-                "mode": "source",
-                "source": false
+                "file": "Ariel Challenge.canvas",
+                "viewState": {
+                  "x": -223.5,
+                  "y": -401.5,
+                  "zoom": -1.1985231222556236
+                }
               },
-              "icon": "lucide-file",
-              "title": "Ariel analysis test"
+              "icon": "lucide-layout-dashboard",
+              "title": "Ariel Challenge"
             }
           }
         ],
@@ -128,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ariel analysis test.md",
+                "file": "Ariel Challenge.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +141,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Ariel analysis test"
+              "title": "Backlinks for Ariel Challenge"
             }
           },
           {
@@ -147,12 +150,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ariel analysis test.md",
+                "file": "Ariel Challenge.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Ariel analysis test"
+              "title": "Outgoing links from Ariel Challenge"
             }
           },
           {
@@ -174,10 +177,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ariel analysis test.md"
+                "file": "Ariel Challenge.canvas"
               },
               "icon": "lucide-list",
-              "title": "Outline of Ariel analysis test"
+              "title": "Outline of Ariel Challenge"
             }
           },
           {
@@ -210,9 +213,9 @@
   },
   "active": "c4f38f6bc7ef52c0",
   "lastOpenFiles": [
-    "Pasted image 20241021124635.png",
-    "Ariel Challenge.canvas",
     "Ariel analysis test.md",
+    "Ariel Challenge.canvas",
+    "Pasted image 20241021124635.png",
     "Pasted image 20241021004630.png",
     "Pasted image 20241021004509.png",
     "Pasted image 20241018151223.png",
@@ -222,7 +225,6 @@
     "Pasted image 20241018005557.png",
     "Pasted image 20241018002719.png",
     "Pasted image 20241018002648.png",
-    "Pasted image 20241018002607.png",
     "Welcome.md"
   ]
 }
