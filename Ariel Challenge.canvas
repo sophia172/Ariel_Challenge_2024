@@ -54,6 +54,6 @@
 		{"id":"542b90592784ed51","fromNode":"ed4668dae8abe228","fromSide":"top","toNode":"24fc47a56edf3f38","toSide":"bottom"},
 		{"id":"586151b8b9d60bcc","fromNode":"30de79ff3be093e9","fromSide":"top","toNode":"fddee456751b4758","toSide":"bottom"},
 		{"id":"425ca1920684b10f","fromNode":"30de79ff3be093e9","fromSide":"top","toNode":"e69852eb52d773b2","toSide":"bottom","color":"2"},
-		{"id":"adf2391340cd1069","fromNode":"ed4668dae8abe228","fromSide":"top","toNode":"d8a7ee9c0af4a2cd","toSide":"bottom","color":"2"}
+		{"id":"adf2391340cd1069","fromNode":"ed4668dae8abe228","fromSide":"top","toNode":"d8a7ee9c0af4a2cd","toSide":"bottom","color":"4"}
 	]
 }
