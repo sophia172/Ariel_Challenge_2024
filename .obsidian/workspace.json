@@ -40,26 +40,9 @@
               "icon": "lucide-layout-dashboard",
               "title": "Ariel Challenge"
             }
-          },
-          {
-            "id": "c4f38f6bc7ef52c0",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Ariel Challenge.canvas",
-                "viewState": {
-                  "x": -223.5,
-                  "y": -401.5,
-                  "zoom": -1.1985231222556236
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Ariel Challenge"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -211,7 +194,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c4f38f6bc7ef52c0",
+  "active": "ce029a889d4cfe6b",
   "lastOpenFiles": [
     "Ariel analysis test.md",
     "Ariel Challenge.canvas",
