@@ -32,9 +32,9 @@
               "state": {
                 "file": "Ariel Challenge.canvas",
                 "viewState": {
-                  "x": -212.3435880176903,
-                  "y": -497.9376683763681,
-                  "zoom": -1.1140135126460897
+                  "x": -80.07916770543103,
+                  "y": -716.9540388194791,
+                  "zoom": -0.05817723663144371
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -98,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "2f549d3c506c11da",
@@ -181,7 +182,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
