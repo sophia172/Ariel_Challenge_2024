@@ -4,45 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "53e4018d9a8f31c4",
+        "id": "6b89d64d37f1bf82",
         "type": "tabs",
         "children": [
           {
-            "id": "eee5770d13048149",
+            "id": "baa302cef90e1108",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Ariel Challenge.canvas",
-                "viewState": {
-                  "x": -235.99028571428553,
-                  "y": -490.6698571428565,
-                  "zoom": -1.1913355871189943
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Ariel Challenge"
-            }
-          },
-          {
-            "id": "ce029a889d4cfe6b",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Ariel Challenge.canvas",
-                "viewState": {
-                  "x": -80.07916770543103,
-                  "y": -716.9540388194791,
-                  "zoom": -0.05817723663144371
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Ariel Challenge"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -196,10 +171,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ce029a889d4cfe6b",
+  "active": "baa302cef90e1108",
   "lastOpenFiles": [
-    "Ariel analysis test.md",
     "Ariel Challenge.canvas",
+    "Ariel analysis test.md",
     "Pasted image 20241021124635.png",
     "Pasted image 20241021004630.png",
     "Pasted image 20241021004509.png",
