@@ -25,10 +25,12 @@
 		{"id":"fddee456751b4758","type":"text","text":"ViT","x":230,"y":-660,"width":97,"height":60},
 		{"id":"e69852eb52d773b2","type":"text","text":"separate stars ","x":287,"y":-787,"width":160,"height":51},
 		{"id":"d8a7ee9c0af4a2cd","type":"text","text":"Use during transit data - outside transit data","x":-646,"y":-1004,"width":250,"height":60},
-		{"id":"21d63b6338aafcce","x":-462,"y":-939,"width":250,"height":60,"type":"text","text":"Cut AIRS data in spatial"},
-		{"id":"4db81c348515e51b","x":-259,"y":-1024,"width":250,"height":60,"type":"text","text":"Cut AIRS data in time"},
-		{"id":"4cdf8ef48c2ae1d6","x":39,"y":-1090,"width":198,"height":66,"type":"text","text":"Predict each planet"},
-		{"id":"eca491ef80a833f5","type":"text","text":"Predict target in each wavelength","x":-860,"y":-479,"width":180,"height":64}
+		{"id":"21d63b6338aafcce","type":"text","text":"Cut AIRS data in spatial","x":-462,"y":-939,"width":250,"height":60},
+		{"id":"4db81c348515e51b","type":"text","text":"Cut AIRS data in time","x":-259,"y":-1024,"width":250,"height":60},
+		{"id":"4cdf8ef48c2ae1d6","type":"text","text":"Predict each planet","x":39,"y":-1090,"width":198,"height":66},
+		{"id":"eca491ef80a833f5","type":"text","text":"Predict target in each wavelength","x":-860,"y":-479,"width":180,"height":64},
+		{"id":"fed3246c5a90f34a","type":"text","text":"Baseline with straight line","x":396,"y":-1004,"width":250,"height":60},
+		{"id":"02d31a5891d568b9","x":-934,"y":-830,"width":250,"height":60,"type":"text","text":"Check MSE"}
 	],
 	"edges":[
 		{"id":"58a3b29720b1ce4d","fromNode":"f6c509506929d184","fromSide":"bottom","toNode":"ede659df0f18afd8","toSide":"top"},
@@ -60,6 +62,8 @@
 		{"id":"adf2391340cd1069","fromNode":"ed4668dae8abe228","fromSide":"top","toNode":"d8a7ee9c0af4a2cd","toSide":"bottom","color":"4"},
 		{"id":"087454f053a39a8d","fromNode":"0c6f091015e8147a","fromSide":"top","toNode":"21d63b6338aafcce","toSide":"bottom","color":"4"},
 		{"id":"a82c5a464a279bad","fromNode":"0c6f091015e8147a","fromSide":"top","toNode":"4db81c348515e51b","toSide":"bottom","color":"4"},
-		{"id":"bcf11c8a3b6aa798","fromNode":"ed4668dae8abe228","fromSide":"top","toNode":"4cdf8ef48c2ae1d6","toSide":"bottom","color":"4"}
+		{"id":"bcf11c8a3b6aa798","fromNode":"ed4668dae8abe228","fromSide":"top","toNode":"4cdf8ef48c2ae1d6","toSide":"bottom","color":"4"},
+		{"id":"621d18bffed19c05","fromNode":"30de79ff3be093e9","fromSide":"top","toNode":"fed3246c5a90f34a","toSide":"bottom","color":"2"},
+		{"id":"c4727f5d49fee3d6","fromNode":"ed4668dae8abe228","fromSide":"top","toNode":"02d31a5891d568b9","toSide":"bottom","color":"2"}
 	]
 }

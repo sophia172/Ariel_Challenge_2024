@@ -11,10 +11,17 @@
             "id": "baa302cef90e1108",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "canvas",
+              "state": {
+                "file": "Ariel Challenge.canvas",
+                "viewState": {
+                  "x": -223.5,
+                  "y": -485,
+                  "zoom": -0.7702497958200857
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Ariel Challenge"
             }
           }
         ]
@@ -73,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "2f549d3c506c11da",
@@ -173,8 +179,8 @@
   },
   "active": "baa302cef90e1108",
   "lastOpenFiles": [
-    "Ariel Challenge.canvas",
     "Ariel analysis test.md",
+    "Ariel Challenge.canvas",
     "Pasted image 20241021124635.png",
     "Pasted image 20241021004630.png",
     "Pasted image 20241021004509.png",
