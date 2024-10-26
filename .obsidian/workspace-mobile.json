@@ -11,15 +11,14 @@
             "id": "6fdddc46eedf63d1",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Ariel Challenge.canvas",
-                "viewState": {
-                  "x": -82.33286448506334,
-                  "y": -539.5346298698441,
-                  "zoom": -0.36697508220508246
-                }
-              }
+                "file": "Ariel analysis test.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ariel analysis test"
             }
           }
         ]
@@ -38,7 +37,9 @@
           "type": "file-explorer",
           "state": {
             "sortOrder": "alphabetical"
-          }
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
         }
       },
       {
@@ -53,7 +54,9 @@
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical"
-          }
+          },
+          "icon": "lucide-search",
+          "title": "Search"
         }
       },
       {
@@ -64,7 +67,9 @@
           "state": {
             "sortOrder": "frequency",
             "useHierarchy": true
-          }
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
         }
       },
       {
@@ -72,7 +77,9 @@
         "type": "leaf",
         "state": {
           "type": "bookmarks",
-          "state": {}
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
         }
       }
     ],
@@ -88,7 +95,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Ariel Challenge.canvas",
+            "file": "Ariel analysis test.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -96,7 +103,9 @@
             "searchQuery": "",
             "backlinkCollapsed": false,
             "unlinkedCollapsed": true
-          }
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
         }
       },
       {
@@ -105,10 +114,12 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Ariel Challenge.canvas",
+            "file": "Ariel analysis test.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
-          }
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
         }
       },
       {
@@ -117,8 +128,10 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Ariel Challenge.canvas"
-          }
+            "file": "Ariel analysis test.md"
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
         }
       }
     ],
@@ -136,5 +149,7 @@
     }
   },
   "active": "6fdddc46eedf63d1",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Ariel Challenge.canvas"
+  ]
 }

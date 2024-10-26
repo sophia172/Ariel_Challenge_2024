@@ -216,4 +216,4 @@
 		- ![[Pasted image 20241021004509.png]]
 	- With Linear correlation plot
 		- ![[Pasted image 20241021004630.png]]
-- 
+
